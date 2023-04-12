@@ -1,0 +1,391 @@
+@font-face {
+	font-family: 'human-design';
+	src: url('../fonts/human-design.eot?b264ts');
+	src: url('../fonts/human-design.eot?b264ts#iefix') format('embedded-opentype'), url('../fonts/human-design.woff2?b264ts') format('woff2'), url('../fonts/human-design.ttf?b264ts') format('truetype'), url('../fonts/human-design.woff?b264ts') format('woff'), url('../fonts/human-design.svg?b264ts#human-design') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-bgc-"],
+[class*="icon-bgc-"] {
+	font-family: 'human-design' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bgc-left:before {
+	content: "\e90d";
+}
+
+.icon-bgc-right:before {
+	content: "\e90e";
+}
+
+.icon-bgc-Earth:before {
+	content: "\e900";
+}
+
+.icon-bgc-Jupiter:before {
+	content: "\e901";
+}
+
+.icon-bgc-Mars:before {
+	content: "\e902";
+}
+
+.icon-bgc-Mercury:before {
+	content: "\e903";
+}
+
+.icon-bgc-Moon:before {
+	content: "\e904";
+}
+
+.icon-bgc-Neptune:before {
+	content: "\e905";
+}
+
+.icon-bgc-North-Node:before {
+	content: "\e906";
+}
+
+.icon-bgc-Pluto:before {
+	content: "\e907";
+}
+
+.icon-bgc-Saturn:before {
+	content: "\e908";
+}
+
+.icon-bgc-South-Node:before {
+	content: "\e909";
+}
+
+.icon-bgc-Sun:before {
+	content: "\e90a";
+}
+
+.icon-bgc-Uranus:before {
+	content: "\e90b";
+}
+
+.icon-bgc-Venus:before {
+	content: "\e90c";
+}
+
+#bgc-form .input-field {
+	margin: 10px 0px;
+}
+
+#bgc-form input,
+#bgc-form select {
+	width: 100%;
+	padding: 10px;
+	border: solid 1px #876f67;
+	border-radius: 3px;
+	height: 40px;
+    font-size: 16px;
+}
+#bgc-form input[type="submit"]{
+	background: #000;
+	color:#fff;
+	border: 0px;
+}
+.clear {
+	clear: both;
+}
+
+#bgc-human-design-bodychart h3 {
+	text-align: center;
+}
+
+.bgc-body-chart-output ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.bgc-body-chart-output ul li {
+	list-style-type: none;
+	padding: 10px;
+	line-height: 23px;
+	margin: 0 0 1px 0;
+	position: relative;
+	padding-left: 180px;
+}
+
+.bgc-body-chart-output ul li:nth-child(odd) {
+	background: #f5f5f5;
+}
+
+.bgc-body-chart-output ul li:nth-child(even) {
+	background: ;
+}
+
+.bgc-body-chart-output ul li strong {
+	text-transform: uppercase;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 170px;
+}
+
+.bgc-body-chart-div h5 {
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.bgc-body-chart-div {
+	width: 55%;
+	float: left;
+	position: relative;
+	z-index: 10;
+}
+
+.bgc-body-chart-output {
+	width: 43%;
+	float: right;
+	position: relative;
+	z-index: 10;
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+.bgc-personality {
+	width: 104px;
+	float: right;
+}
+
+.bgc-design {
+	width: 104px;
+	float: left;
+}
+
+.bgc-chart {
+	width: -moz-calc(100% - 208px);
+	width: -webkit-calc(100% - 208px);
+	width: calc(100% - 208px);
+	float: left;
+	position: relative;
+	text-align: center;
+}
+
+.bgc-chart svg {
+	width: 350px;
+	margin-top: -40px;
+}
+
+.bgc-design ul li,
+.bgc-personality ul li {
+	border-radius: 3px;
+	padding: 5px 13px;
+	position: relative;
+	font-size: 15px;
+	min-height: 25px;
+	line-height: 25px;
+	margin-bottom: 5px;
+	color: #000;
+	list-style: none;
+	display: block;
+	text-align: right;
+}
+
+.bgc-personality ul li span,
+.bgc-design ul li span {
+	position: absolute;
+	left: 16px;
+	top: 7px;
+	font-size: 20px;
+}
+
+.arrows span {
+	display: block;
+	margin: 0 0 10px 0;
+	font-size: 20px;
+}
+
+.arrows.design-arrows {
+	position: absolute;
+	left: 30%;
+	top: 100px;
+	color: #c0c0c0;
+}
+
+.arrows.personality-arrows {
+	position: absolute;
+	right: 30%;
+	top: 100px;
+	color: #B86A4F;
+}
+
+.bgc-sub-header {
+	padding-bottom: 30px;
+}
+
+.bgc-design ul li {
+	background: #c0c0c0;
+	color: #000;
+}
+
+.bgc-personality ul li {
+	background: #000;
+	color: #fff;
+}
+
+.bgc-no-space {
+	padding: 0px;
+}
+
+.bgc-mobile-view {
+	display: none;
+}
+
+.bgc-desktop-view {
+	display: block;
+}
+
+[data-tooltip] {
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+	visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	pointer-events: none;
+}
+
+[data-tooltip]:before {
+	position: absolute;
+	bottom: 0%;
+	left: -100%;
+	margin-bottom: 5px;
+	margin-left: -80px;
+	padding: 7px;
+	width: 160px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #000;
+	background-color: hsla(0, 0%, 20%, 0.9);
+	color: #fdf5ee;
+	content: attr(data-tooltip);
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+[data-tooltip]:after {
+	position: absolute;
+	bottom: 50%;
+	left: 0%;
+	margin-left: -10px;
+	width: 0;
+	border-left: 5px solid #000;
+	border-left: 5px solid hsla(0, 0%, 20%, 0.9);
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	content: " ";
+	font-size: 0;
+	line-height: 0;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+
+.bgc-design ul li[data-tooltip]:before {
+	position: absolute;
+	bottom: 0%;
+	left: auto;
+	right: -180%;
+	margin-bottom: 5px;
+}
+
+.bgc-design ul li[data-tooltip]:after {
+	position: absolute;
+	bottom: 50%;
+	left: auto;
+	right: 0%;
+	margin-right: -13px;
+	width: 0;
+	border-right: 5px solid #000;
+	border-right: 5px solid hsla(0, 0%, 20%, 0.9);
+	border-left: 5px solid transparent;
+	border-top: 5px solid transparent;
+	content: " ";
+	font-size: 0;
+	line-height: 0;
+}
+
+@media (max-width: 1310px) {
+	.bgc-chart svg {
+		width: 300px;
+		margin-top: -80px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.bgc-body-chart-output,
+	.bgc-body-chart-div {
+		width: 100%;
+		float: none;
+	}
+
+	.bgc-body-chart-output {
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 750px) {
+	.bgc-body-chart {
+		width: 100%;
+	}
+
+	.bgc-hd-chart-form {
+		width: 100%;
+	}
+}
+
+@media (max-width:650px) {
+	.bgc-body-chart-output {
+		padding-top: 50px;
+	}
+
+	.bgc-chart,
+	.actions {
+		width: 100%;
+		float: none;
+	}
+
+	.bgc-desktop-view {
+		display: none;
+	}
+
+	.bgc-mobile-view {
+		display: block;
+		float: left;
+	}
+
+	.bgc-chart {
+		padding-bottom: 50px;
+	}
+}
+
+/*Default*/

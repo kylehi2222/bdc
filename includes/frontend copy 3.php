@@ -115,7 +115,7 @@ if (!function_exists('bgc_chart_shortcode')) {
         // Retrieve the data from user meta
         $data = get_user_meta($user_id, '_bgc_data', true);
 
-        if (!isset($data->Properties)) {
+                if (!isset($data->Properties)) {
             wp_redirect(home_url('/'));
             exit;
         }
@@ -131,7 +131,6 @@ if (!function_exists('bgc_chart_shortcode')) {
         }
 
         $data = json_encode($data);
-        print_r($data->Properties, true);
 
         include_once BGC_PLUGIN_DIR . 'templates/chart.php';
 
@@ -252,19 +251,21 @@ function bgc_check_type_and_redirect_shortcode($atts) {
 }
 add_shortcode('bgc_check_type_and_redirect', 'bgc_check_type_and_redirect_shortcode');
 
+
 if (!function_exists('bgc_wp_enqueue_scripts')) {
     add_action('wp_enqueue_scripts', 'bgc_wp_enqueue_scripts');
 
     function bgc_wp_enqueue_scripts() {
-        // Enqueue styles and scripts unconditionally
-        wp_enqueue_style('bgc-selectize', BGC_PLUGIN_URL . 'assets/css/selectize.css');
-        wp_enqueue_style('bgc-typeahead', BGC_PLUGIN_URL . 'assets/css/typeahead.css');
-        wp_enqueue_style('bgc-hd', BGC_PLUGIN_URL . 'assets/css/hd.css');
+    // Enqueue styles and scripts unconditionally
+    wp_enqueue_style('bgc-selectize', BGC_PLUGIN_URL . 'assets/css/selectize.css');
+    wp_enqueue_style('bgc-typeahead', BGC_PLUGIN_URL . 'assets/css/typeahead.css');
+    wp_enqueue_style('bgc-hd', BGC_PLUGIN_URL . 'assets/css/hd.css');
 
-        wp_enqueue_script('bgc-selectize', BGC_PLUGIN_URL . 'assets/js/selectize.js', array('jquery'));
-        wp_enqueue_script('bgc-typeahead', BGC_PLUGIN_URL . 'assets/js/typeahead.bundle.js');
-        wp_enqueue_script('bgc-hd', BGC_PLUGIN_URL . 'assets/js/hd.js');
-    }
-    add_action('wp_enqueue_scripts', 'bgc_wp_enqueue_scripts');
+    wp_enqueue_script('bgc-selectize', BGC_PLUGIN_URL . 'assets/js/selectize.js', array('jquery'));
+    wp_enqueue_script('bgc-typeahead', BGC_PLUGIN_URL . 'assets/js/typeahead.bundle.js');
+    wp_enqueue_script('bgc-hd', BGC_PLUGIN_URL . 'assets/js/hd.js');
 }
+add_action('wp_enqueue_scripts', 'bgc_wp_enqueue_scripts');
+}
+
 ?>

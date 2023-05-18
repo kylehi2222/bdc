@@ -1,5 +1,4 @@
 <div id="bgc-form">
-	<h3 class="title"><?php _e('Please enter your birth details below', 'bgc'); ?></h3>
 	<div class="form-wrapper">
 		<form action="<?php echo add_query_arg('bgc-generate', 1); ?>" method="post">
 			<div class="input-field">
@@ -72,7 +71,7 @@
 				<input type="hidden" name="_timezone" id="timezone">
 			</div>
 			<div class="buttons">
-				<input type="submit" class="green-btn w-100" value="<?php _e('View Your Chart', 'bgc'); ?>">
+				<input type="submit" class="green-btn w-100" value="<?php _e('Continue..', 'bgc'); ?>">
 			</div>
 		</form>
 	</div>
